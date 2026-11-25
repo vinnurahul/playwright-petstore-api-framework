@@ -1,0 +1,53 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6] [cursor=pointer]:
+        - img "logo" [ref=e7]
+        - heading "Learn Automation Courses" [level=1] [ref=e8]
+      - generic [ref=e9]:
+        - img "menu" [ref=e10] [cursor=pointer]
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - text: Learn Automation Courses
+            - img "delete" [ref=e13] [cursor=pointer]
+          - generic [ref=e14]:
+            - link "Home" [ref=e15] [cursor=pointer]:
+              - /url: /
+            - link "Practise" [ref=e17] [cursor=pointer]:
+              - /url: /practise
+  - generic [ref=e180]:
+    - img "Login" [ref=e182]
+    - generic [ref=e183]:
+      - generic [ref=e185]:
+        - heading "Sign In" [level=2] [ref=e186]
+        - textbox "Enter Email" [ref=e187]
+        - textbox "Enter Password" [ref=e188]
+        - button "Sign in" [ref=e189] [cursor=pointer]
+        - link "New user? Signup" [ref=e190] [cursor=pointer]:
+          - /url: /signup
+      - generic [ref=e191]:
+        - heading "Connect with us" [level=2] [ref=e192]
+        - generic [ref=e193] [cursor=pointer]:
+          - link [ref=e194]:
+            - /url: https://youtube.com/MukeshOtwani
+          - link [ref=e198]:
+            - /url: https://twitter.com/MukeshOtwani
+          - link [ref=e201]:
+            - /url: https://www.linkedin.com/in/mukesh-otwani-93631b99/
+          - link [ref=e204]:
+            - /url: https://www.facebook.com/groups/256655817858291
+          - link [ref=e207]:
+            - /url: https://learn-automation/reddit
+  - generic [ref=e62]:
+    - generic [ref=e63]:
+      - heading "Learn Automation By Mukesh Otwani" [level=3] [ref=e64]
+      - heading "©2023 All rights reserved" [level=2] [ref=e65]
+    - generic [ref=e66] [cursor=pointer]:
+      - link [ref=e67]:
+        - /url: https://youtube.com/MukeshOtwani
+      - link [ref=e71]:
+        - /url: https://twitter.com/MukeshOtwani
+      - link [ref=e74]:
+        - /url: https://www.linkedin.com/in/mukesh-otwani-93631b99/
+      - link [ref=e77]:
+        - /url: https://www.facebook.com/groups/256655817858291

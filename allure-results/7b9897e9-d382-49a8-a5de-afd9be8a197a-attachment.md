@@ -1,0 +1,121 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: e2e_pet.spec.js >> Pet Store API Tests >> Create a pet
+- Location: tests/e2e_pet.spec.js:11:9
+
+# Error details
+
+```
+SyntaxError: Unexpected token '<', "<?xml vers"... is not valid JSON
+```
+
+# Test source
+
+```ts
+  1  | import {test, expect} from '@playwright/test';
+  2  | 
+  3  | test.describe('Pet Store API Tests', () => 
+  4  |   {
+  5  | 
+  6  |     test.describe.configure({mode : 'serial'})
+  7  |     const baseURL = 'https://petstore.swagger.io/v2/';
+  8  |     let petID;
+  9  | 
+  10 | 
+  11 |     test('Create a pet', async ({request}) => {
+  12 | 
+  13 |     const response = await request.post(`${baseURL}pets`, {
+  14 |       data: 
+  15 |       {
+  16 |         id: 12345,
+  17 |         category: 
+  18 |         {
+  19 |         id: 12345,
+  20 |         name: 'Test Pet'
+  21 |         },
+  22 |         name: 'Test Pet',
+  23 |         photoUrls: ['https://contrastly.com/pet-photography-101-an-introduction/'],
+  24 |         tags: 
+  25 |         [
+  26 |           {
+  27 |             id: 12345,
+  28 |             name: 'Test Tag'
+  29 |           }
+  30 |         ],
+  31 |         status: 'available'
+  32 |       }  
+  33 |     });
+  34 | 
+> 35 |     const responseBody = await response.json();
+     |                          ^ SyntaxError: Unexpected token '<', "<?xml vers"... is not valid JSON
+  36 |     petID = responseBody.id;
+  37 |     // Verify petId should not be empty
+  38 |     expect(petID).not.toBeTruthy();
+  39 |     // Verify the response status code is 200
+  40 |     expect(response.status()).toBe(200);
+  41 | 
+  42 |   });
+  43 | 
+  44 |     test('Update pet details', async ({request}) => {
+  45 |     const response = await request.put(`${baseURL}pets/${petID}`, {
+  46 |       data: 
+  47 |       {
+  48 |         id: petID,
+  49 |         name: 'Test Pet 1',
+  50 |         status: 'available'
+  51 |       }
+  52 |     });
+  53 |     const responseBody = await response.json();
+  54 |     // Verify the response status code is 200
+  55 |     expect(response.status()).toBe(200);
+  56 |   });
+  57 | 
+  58 |     test('Get petId details', async ({request}) => {
+  59 |     const response = await request.get(`${baseURL}pets/${petID}`);
+  60 | 
+  61 |     const responseBody = await response.json();
+  62 |     // Verify the response status code is 200
+  63 |     expect(response.status()).toBe(200);
+  64 |     // Verify the pet name is updated to 'Test Pet 1'
+  65 |   });
+  66 | 
+  67 | 
+  68 |     test ('Delete pet details', async ({request}) => 
+  69 |     {
+  70 |     const response = await request.delete(`${baseURL}pets/${petID}`, 
+  71 |       {
+  72 |       headers: 
+  73 |       {
+  74 |         'accept': 'application/json',
+  75 |         'api_key': 'special-key'
+  76 | 
+  77 |       },
+  78 |       
+  79 |       data: 
+  80 |       {
+  81 |         id: petID
+  82 |       }
+  83 |     });
+  84 |     const responseBody = await response.json();
+  85 |     // Verify the response status code is 200
+  86 |     expect(response.status()).toBe(200);
+  87 |   });
+  88 | 
+  89 |     test('Get pet details', async ({request}) => 
+  90 |     {
+  91 |     const response = await request.get(`${baseURL}pets/${petID}`);
+  92 |     const responseBody = await response.json();
+  93 |     // Verify the response status code is 404
+  94 |     expect(response.status()).toBe(404);
+  95 |   });
+  96 | 
+  97 | }); 
+  98 |     
+  99 | 
+```

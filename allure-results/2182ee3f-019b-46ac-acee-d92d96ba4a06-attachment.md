@@ -1,0 +1,67 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: create_pet.spec.js >> Pet Store API Tests >> Create a pet
+- Location: tests/create_pet.spec.js:9:13
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 404
+```
+
+# Test source
+
+```ts
+  1  | import {test, expect} from '@playwright/test';
+  2  | 
+  3  | test.describe('Pet Store API Tests', () => 
+  4  |     {
+  5  | 
+  6  |        // test.describe.configure({mode : 'serial'})
+  7  |         const baseURL = 'https://petstore.swagger.io/v2/';
+  8  |         let petID;
+  9  |         test('Create a pet', async ({request}) => 
+  10 |         {
+  11 |             console.log(`${baseURL}pets`)
+  12 |         const response = await request.put(`${baseURL}pets`, {
+  13 |             headers: 
+  14 |             {
+  15 |                 accept: 'application/json'
+  16 |             },
+  17 |             data: 
+  18 |                 {
+  19 |                     id: 123455555555,
+  20 |                     category: 
+  21 |                 {
+  22 |                 id: 123455555555,
+  23 |                 name: 'Test Pet'
+  24 |                 },
+  25 |                 name: 'Test Pet',
+  26 |                 photoUrls: ['https://contrastly.com/pet-photography-101-an-introduction/'],
+  27 |                 tags: 
+  28 |                 [
+  29 |                     {
+  30 |                         id: 123455555555,
+  31 |                         name: 'Test Tag'
+  32 |                     }
+  33 |                 ],
+  34 |                 status: 'available'
+  35 |         }  
+  36 |     });
+> 37 |     expect(response.status()).toBe(200);
+     |                               ^ Error: expect(received).toBe(expected) // Object.is equality
+  38 |     const responseBody = await response.json();
+  39 |     petID = responseBody.id;
+  40 |     
+  41 |     });
+  42 | });
+```

@@ -1,0 +1,45 @@
+{
+  "newPet" : 
+  {
+  "id": 123455555555,
+  "category": {
+    "id": 123455555555,
+    "name": "Test Pet"
+  },
+  "name": "Test Pet",
+  "photoUrls": ["https://contrastly.com/pet-photography-101-an-introduction/"],
+  "tags": [
+    {
+      "id": 123455555555,
+      "name": "Test Tag"
+    }
+  ],
+  "status": "available"
+  },
+
+  "updatedPet": 
+  {
+    "id": 123455555555,
+    "category": {
+      "id": 123455555555,
+      "name": "Updated Pet"
+    },
+    "name": "Updated Pet",
+    "photoUrls": ["https://contrastly.com/pet-photography-101-an-introduction/"],
+    "tags": [
+      {
+        "id": 123455555555,
+        "name": "Updated Tag"
+      }
+    ],
+    "status": "pending"
+  },
+
+  "form": 
+  {
+        "name": "Updated name1",
+        "status": "sold"
+  }
+
+
+}

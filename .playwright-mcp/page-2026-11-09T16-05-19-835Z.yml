@@ -1,0 +1,139 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6] [cursor=pointer]:
+        - img "logo" [ref=e7]
+        - heading "Learn Automation Courses" [level=1] [ref=e8]
+      - generic [ref=e9]:
+        - button "Cart" [ref=e80] [cursor=pointer]
+        - generic [ref=e81]: Manage
+        - img "menu" [ref=e10] [cursor=pointer]
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - text: Learn Automation Courses
+            - img "delete" [ref=e13] [cursor=pointer]
+          - generic [ref=e14]:
+            - link "Home" [ref=e15] [cursor=pointer]:
+              - /url: /
+            - link "Practise" [ref=e17] [cursor=pointer]:
+              - /url: /practise
+            - button "Sign out" [ref=e82] [cursor=pointer]
+  - generic [ref=e84]:
+    - generic [ref=e88]:
+      - generic [ref=e89]:
+        - heading "Selenium For Web Automation" [level=2] [ref=e90]
+        - paragraph [ref=e91]: Selenium For Web Automation...
+      - generic [ref=e92]:
+        - img "instructor" [ref=e93]
+        - text: Mukesh Otwani
+      - generic [ref=e94]:
+        - img "clock" [ref=e95]
+        - generic [ref=e96]: "Start:"
+        - text: Mon Feb 17 2025
+      - generic [ref=e97]:
+        - img "clock" [ref=e98]
+        - generic [ref=e99]: "Finish:"
+        - text: Mon Mar 17 2025
+      - generic [ref=e100]:
+        - text: "Price:"
+        - generic [ref=e101]: ₹1500
+      - button [ref=e102] [cursor=pointer]:
+        - text: Add to Cart
+        - img "right arrow" [ref=e103]
+    - generic [ref=e107]:
+      - generic [ref=e108]:
+        - heading "Playwright1793524785722" [level=2] [ref=e109]
+        - paragraph [ref=e110]: Playwright using Javascript and typescript...
+      - generic [ref=e111]:
+        - img "instructor" [ref=e112]
+        - text: Mukesh
+      - generic [ref=e113]:
+        - img "clock" [ref=e114]
+        - generic [ref=e115]: "Start:"
+        - text: Sun Nov 01 2026
+      - generic [ref=e116]:
+        - img "clock" [ref=e117]
+        - generic [ref=e118]: "Finish:"
+        - text: Tue Dec 01 2026
+      - generic [ref=e119]:
+        - text: "Price:"
+        - generic [ref=e120]: ₹2999
+      - button [ref=e121] [cursor=pointer]:
+        - text: Add to Cart
+        - img "right arrow" [ref=e122]
+    - generic [ref=e126]:
+      - generic [ref=e127]:
+        - heading "Asasa" [level=2] [ref=e128]
+        - paragraph [ref=e129]: Asasa...
+      - generic [ref=e130]:
+        - img "instructor" [ref=e131]
+        - text: Asasa
+      - generic [ref=e132]:
+        - img "clock" [ref=e133]
+        - generic [ref=e134]: "Start:"
+        - text: Thu Nov 05 2026
+      - generic [ref=e135]:
+        - img "clock" [ref=e136]
+        - generic [ref=e137]: "Finish:"
+        - text: Sat Dec 05 2026
+      - generic [ref=e138]:
+        - text: "Price:"
+        - generic [ref=e139]: ₹100
+      - button [ref=e140] [cursor=pointer]:
+        - text: Add to Cart
+        - img "right arrow" [ref=e141]
+    - generic [ref=e145]:
+      - generic [ref=e146]:
+        - heading "Test Course" [level=2] [ref=e147]
+        - paragraph [ref=e148]: Test Course Description for Testing...
+      - generic [ref=e149]:
+        - img "instructor" [ref=e150]
+        - text: Test Instructor
+      - generic [ref=e151]:
+        - img "clock" [ref=e152]
+        - generic [ref=e153]: "Start:"
+        - text: Fri Nov 06 2026
+      - generic [ref=e154]:
+        - img "clock" [ref=e155]
+        - generic [ref=e156]: "Finish:"
+        - text: Sun Dec 06 2026
+      - generic [ref=e157]:
+        - text: "Price:"
+        - generic [ref=e158]: ₹1000
+      - button [ref=e159] [cursor=pointer]:
+        - text: Add to Cart
+        - img "right arrow" [ref=e160]
+    - generic [ref=e164]:
+      - generic [ref=e165]:
+        - heading "Playwright123" [level=2] [ref=e166]
+        - paragraph [ref=e167]: Test Automation...
+      - generic [ref=e168]:
+        - img "instructor" [ref=e169]
+        - text: Sam
+      - generic [ref=e170]:
+        - img "clock" [ref=e171]
+        - generic [ref=e172]: "Start:"
+        - text: Sun Nov 08 2026
+      - generic [ref=e173]:
+        - img "clock" [ref=e174]
+        - generic [ref=e175]: "Finish:"
+        - text: Tue Dec 08 2026
+      - generic [ref=e176]:
+        - text: "Price:"
+        - generic [ref=e177]: ₹3400
+      - button [ref=e178] [cursor=pointer]:
+        - text: Add to Cart
+        - img "right arrow" [ref=e179]
+  - generic [ref=e62]:
+    - generic [ref=e63]:
+      - heading "Learn Automation By Mukesh Otwani" [level=3] [ref=e64]
+      - heading "©2023 All rights reserved" [level=2] [ref=e65]
+    - generic [ref=e66] [cursor=pointer]:
+      - link [ref=e67]:
+        - /url: https://youtube.com/MukeshOtwani
+      - link [ref=e71]:
+        - /url: https://twitter.com/MukeshOtwani
+      - link [ref=e74]:
+        - /url: https://www.linkedin.com/in/mukesh-otwani-93631b99/
+      - link [ref=e77]:
+        - /url: https://www.facebook.com/groups/256655817858291

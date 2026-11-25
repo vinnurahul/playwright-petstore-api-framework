@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1036","Get pet details","chromium","2026-11-04","passed","2026-11-04","Pet Store API Tests","e2e_pet.spec.js","",""
+"","1042","Delete pet details","chromium","2026-11-04","passed","2026-11-04","Pet Store API Tests","e2e_pet.spec.js","",""
+"","8","Get petId details","chromium","2026-11-04","skipped","2026-11-04","Pet Store API Tests","e2e_pet.spec.js","",""
+"","1166","Create a pet","chromium","2026-11-04","passed","2026-11-04","Pet Store API Tests","create_pet.spec.js","",""
+"","1202","Create a pet","chromium","2026-11-04","passed","2026-11-04","Pet Store API Tests","e2e_pet.spec.js","",""
+"","1277","Update pet details","chromium","2026-11-04","passed","2026-11-04","Pet Store API Tests","e2e_pet.spec.js","",""

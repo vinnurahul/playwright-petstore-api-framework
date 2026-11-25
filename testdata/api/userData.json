@@ -1,0 +1,27 @@
+{
+    "newUser":
+    { 
+        "id": 5569, 
+        "username": "damera{{$timestamp}}", 
+        "firstName": "{{$randomString}}", 
+        "lastName": "vinnu", 
+        "email": "damera{{$timestamp}}@example.com", 
+        "password": "password", 
+        "phone": "1234567", 
+        "userStatus": 0 
+    },
+
+    "updateUser":
+    { 
+        "id": 5569, 
+        "username": "updatedUsername", 
+        "firstName": "updatedFirstname", 
+        "lastName": "vinnu", 
+        "email": "damera{{$timestamp}}@example.com", 
+        "password": "password", 
+        "phone": "1234567", 
+        "userStatus": 0 
+    }
+
+}
+

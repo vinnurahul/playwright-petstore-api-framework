@@ -1,0 +1,2 @@
+[     724ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://freelance-learn-automation.vercel.app/login:0
+[  534288ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://freelance-learn-automation.vercel.app/login:0
